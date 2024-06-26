@@ -1,6 +1,7 @@
 基于机器学习的识别新闻真假系统
 
-![image-20240626120655937](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20240626120655937.png)
+![image](https://github.com/Chencihai/algorithm/assets/95452629/ff7ca9ae-e88d-4e96-abf9-0d446600be4f)
 
-![image-20240626120715494](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20240626120715494.png)
+![image](https://github.com/Chencihai/algorithm/assets/95452629/ea69d526-6085-4277-9104-47294688bf55)
+
 
