@@ -19,15 +19,18 @@
 
 ①收件人信息操作：可以查看、添加、删除和修改收件人的详细信息，如姓名、地址等。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps1.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/90822d05-8e34-4d62-857c-306dd4cf9935)
+
 
 ②寄件人信息操作：可以对寄件人的相关信息进行管理，例如查看寄件人基本信息并进行相应的修改。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps2.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/3aff00b2-45bc-4bbb-8353-e8d021fada56)
+
 
 ③配送员信息操作：能够管理和更新配送员的个人信息，确保配送团队的信息准确无误。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps3.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/48386588-8688-4713-9a04-930e1c2e8a84)
+
 
 2、订单信息管理
 
@@ -39,7 +42,8 @@
 
 此外，管理员还可以通过系统的主页面选择不同的管理选项，进入对应的操作界面，执行详细的管理任务。这些功能都能够共同确保物流信息的高效管理和运营。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps4.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/cead6964-40ee-4042-ab95-47fb2b97d2fe)
+
 
 ***\*3\*******\*、\**** ***\*功能模块分析\****
 
@@ -63,7 +67,8 @@
 
 在主页面中，为普通用户和管理员分别设置了“管理员登录”和“游客登录”按钮，以区分不同用户的登录入口。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps5.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/cf58c3b4-45b3-447b-bd35-23af68496d99)
+
 
  
 
@@ -75,7 +80,8 @@
 
 Button(root, text="登录", ... fg='black', activebackground='black', activeforeground='white')用于创建并放置登录按钮。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps6.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/01aba305-a535-4acf-ad38-150f7517fffb)
+
 
 4） 异常处理：
 
@@ -83,7 +89,8 @@ Button(root, text="登录", ... fg='black', activebackground='black', activefore
 
 使用showinfo(title='提示', message='账号/密码错误！')显示错误消息给用户。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps7.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/bdaf7904-942e-4c8f-a619-bfedaa9ecd66)
+
 
 5）退出机制：
 
@@ -91,7 +98,8 @@ Button(root, text="登录", ... fg='black', activebackground='black', activefore
 
 Button(root, text="退出", command=root.destroy, ... fg='black', bg='gainsboro', activebackground='black', activeforeground='white')实现了这一功能。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps8.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/325d77f7-5cf9-4cfd-902b-a397f07708dc)
+
 
 通过这样的设计，系统实现了一个基本的登录与权限管理功能，确保只有授权的用户才能访问特定的资源或执行特定的操作。
 
@@ -103,13 +111,15 @@ Button(root, text="退出", command=root.destroy, ... fg='black', bg='gainsboro'
 
 首先建立与数据库的链接。所需的变量有：主机名或者IP地址、用户名、密码、数据库名称以及端口号。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps9.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/301d6ecc-ed9c-4185-a1c8-da167c129516)
+
 
 接下来实现对MySQL数据库的查询、插入、更新和删除等操作，并且能够接受和处理这些操作的结果。通过调用pymysql库中的cursor()方法创建一个游标对象，通过这个游标对象来执行所有的SQL语句并获取结果。
 
 完成对数据库基本操作的实现后开始实现“指定SQL语句的执行”以便来查询或者更新数据库中的数据。例如，在验证管理员登录时执行了查询管理员信息的SQL语句。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps10.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/0634e5dc-eda0-40b3-93ce-f6c49cbabdab)
+
 
 在已经完成了数据库的增删改查后最重要的莫过于将更改后的数据保存在数据库中。通过db.commit()完成。
 
@@ -118,14 +128,14 @@ Button(root, text="退出", command=root.destroy, ... fg='black', bg='gainsboro'
 ***\*5、数据库分析\****
 
 数据库的设计遵循模块化原则，每个模块对应系统中不同的实体或概念。例如，收件人、寄件人和配送员作为物流系统的关键参与者，各自拥有独立的信息表。这种设计便于管理和扩展，也有助于保持数据的一致性和完整性。
+![image](https://github.com/Chencihai/algorithm/assets/95452629/0abc4ebc-ee9b-4278-8347-0c61ea06800c)
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps11.jpg) 
 
 通过创建多个表来存储不同类型的数据，并确保每张表都满足第三范式（3NF），减少了数据冗余，提高了数据完整性和查询效率。例如，使用单独的表来存储收件人、寄件人和配送员的信息，而不是在一个表中混合这些信息。
 
  
+![image](https://github.com/Chencihai/algorithm/assets/95452629/01d3622b-b248-4008-bb46-4460225d4308)
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps12.jpg) 
 
 通过以上代码创建收件人表。
 
@@ -142,11 +152,11 @@ Rphonenumber：VARCHAR(20) 类型，最长20个字符的可变长字符串字段
 | 收件人(recipient) |                    |              |      |             |
 | ----------------- | ------------------ | ------------ | ---- | ----------- |
 | Rname             | RID                | Raddress     | Rsex | Rphone      |
-| 张至信            | 123456789012345678 | 甘肃政法大学 | 男   | 12345678901 |
+| 张三              | 123456789012345678   | 北京大学   | 男   | 12345678901 |
 
  
+![image](https://github.com/Chencihai/algorithm/assets/95452629/93336283-331f-421f-bf6c-c57923b6b388)
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps13.jpg) 
 
 通过以上代码创建寄件人表。
 
@@ -163,11 +173,10 @@ Sphonenumber：VARCHAR(20) 类型，最长20个字符的可变长字符串字段
 | 寄件人(sender) |                    |              |      |             |
 | -------------- | ------------------ | ------------ | ---- | ----------- |
 | Sname          | SID                | Saddress     | Ssex | Sphone      |
-| 张至信         | 123456789012345678 | 甘肃政法大学 | 男   | 12345678901 |
+| 张三          | 123456789012345678 | 北京大学 | 男   | 12345678901 |
 
- 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/797b901c-7e25-4faf-ae48-84cc1c0277f7)
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps14.jpg) 
 
 上述代码创建了配送员表
 
@@ -184,11 +193,11 @@ Dphonenumber：VARCHAR(20) 类型，最长20个字符的可变长字符串字段
 | 配送员(distributor) |                    |      |      |             |
 | ------------------- | ------------------ | ---- | ---- | ----------- |
 | Dname               | Dnum               | DID  | Dsex | Dphone      |
-| 张至信              | 123456789012345678 | 123  | 男   | 12345678901 |
+| 张三               | 123456789012345678 | 123  | 男   | 12345678901 |
 
  
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps15.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/7372b9ce-2d63-4666-9376-aafba13fc63c)
 
  
 
@@ -227,7 +236,8 @@ Oprice：DECIMAL(10, 2) 类型，表示这是一个定点数类型字段，总�
 
 通过使用INSERT IGNORE INTO语句来进行数据的完整性约束，在插入数据时忽略重复值，避免因尝试插入重复记录而引起的错误。例如，向收件人(recipient)、寄件人(sender)和配送员(distributor)表中插入初始数据时使用了此语句。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps16.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/0b7a5e5b-c544-42bb-af09-e65c3b059646)
+
 
 ON DUPLICATE KEY UPDATE是MySQL提供的一种特殊更新语句，用于在尝试插入记录时如果遇到主键或唯一约束冲突（即已存在相同的主键值），则自动更新现有记录的相应字段值。
 
@@ -235,7 +245,7 @@ ON DUPLICATE KEY UPDATE是MySQL提供的一种特殊更新语句，用于在尝�
 
 利用ON DUPLICATE KEY UPDATE机制处理主键冲突的情况。当插入新记录时，如果遇到已存在的主键值（例如订单编号），则自动更新现有记录的相应列值。这在订单表(orders)中的数据插入示例中得到应用，确保了订单信息的一致性与唯一性。
 
-![img](file:///C:\Users\Lenovo\AppData\Local\Temp\ksohtml28004\wps17.jpg) 
+![image](https://github.com/Chencihai/algorithm/assets/95452629/3116b576-5085-440c-8c9e-2e8a84bc2f98)
 
 此外通过在订单表中设置外键将四个表完整的联系了起来，这些外键分别引用了以下三个表的主键或候选键：
 
